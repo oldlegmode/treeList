@@ -6,7 +6,7 @@ import {Li} from './li';
 
 @Component({
     selector: 'app',
-    template: `<ul class="list-group">
+    template: `<ul class="list-group" (click)=handler($event)>
                 <tree [nodes]="arr"></tree>
               </ul>
               `,
@@ -24,3 +24,4 @@ export class app {
     )
   };
 }
+
